@@ -9,9 +9,16 @@ windows.onload = function()
         .forEach( createButton )
     })
 }
+
 function createButton(txt)
 {
     var btn = document.createElement('button');
     btn.innerText = txt;
     $('#button').appendChild(btn);
+    btn.onclick = showImage;
+}
+
+function showImage
+{
+    
 }
