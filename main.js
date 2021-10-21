@@ -14,11 +14,11 @@ function createButton(txt)
 {
     var btn = document.createElement('button');
     btn.innerText = txt;
-    $('#button').appendChild(btn);
+    $('#body').appendChild(btn);
     btn.onclick = showImage;
 }
 
-function showImage
+function showImage()
 {
-    
+    fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
 }
