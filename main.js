@@ -22,4 +22,8 @@ function showImage(event)
 {
     var breed = this.innerText
     fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
+    .then(r =>r.json())
+    .then(data => {
+        $('#dog').src = data.message;
+    });
 }
