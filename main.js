@@ -1,6 +1,6 @@
 const $ = document.querySelector.bind(document);
 
-windows.onload = function()
+window.onload = function()
 {
     this.fetch(`https://dog.ceo/api/breeds/list/all`)
     .then(r => r.json())
