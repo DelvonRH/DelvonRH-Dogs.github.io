@@ -21,6 +21,12 @@ function createButton(txt)
 function showImage(event)
 {
     var breed = this.innerText
+    var priorSelected  = $('.selected');
+    if(priorSelected)
+    {
+        priorSelected.className = " ";
+    }
+    this.classList.add('selected');
     fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
     .then(r =>r.json())
     .then(data => {
