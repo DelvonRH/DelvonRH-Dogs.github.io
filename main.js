@@ -7,7 +7,7 @@ windows.onload = function()
     .then(data => {
         Object.keys(data.message)
         .forEach( createButton )
-    })
+    });
 }
 
 function createButton(txt)
@@ -18,7 +18,8 @@ function createButton(txt)
     btn.onclick = showImage;
 }
 
-function showImage()
+function showImage(event)
 {
+    var breed = this.innerText
     fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
 }
