@@ -14,7 +14,7 @@ function createButton(txt)
 {
     var btn = document.createElement('button');
     btn.innerText = txt;
-    $('#body').appendChild(btn);
+    $('#buttons').appendChild(btn);
     btn.onclick = showImage;
 }
 

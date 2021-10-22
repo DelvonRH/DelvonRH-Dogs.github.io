@@ -19,36 +19,43 @@
 #body
 {
     width: 100%;
-    background-color: grey;
     position: absolute;
     top: 64px;
     bottom: 0;
+    background-image: linear-gradient(180deg,#43cea2,#185a9d);
+}
+
+#img
+{
+    text-align: center;
 }
 
 #buttons
 {
-    width: 100%;
-    background-color: grey;
-    height: 64px;
+    width: 80%;
     color: white;
     margin: auto;
-    width: 50%;
     padding: 5px;
-    
+    background-image: black;
 }
 
 #dog
 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+   height: 300px;
+   border-radius: 10%;
 }
 
 .selected
 {
-    background-color: yellow;
+    background-color: black;
     color: #eee;
 }
 
+button
+{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
 
 
