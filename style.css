@@ -80,3 +80,20 @@ a{
     color: blue;
     cursor: pointer;
 }
+
+#newComment
+{
+    margin-left: 10px;
+    margin-top: 10px;
+    resize: none;
+}
+
+#slattbratha
+{
+    margin-left: 10px;
+}
+
+#addCommentBtn
+{
+    margin-top: 0;
+}
